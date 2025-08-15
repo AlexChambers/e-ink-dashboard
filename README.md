@@ -19,6 +19,49 @@ Simply open `index.html` in any modern browser - no server required!
 ## 📱 Network Access
 The Node.js server automatically detects your local IP and makes the dashboard accessible from other devices on your network - perfect for testing e-ink tablets!
 
+## 📸 Screenshots (Boox Note Air 2)
+
+<details>
+<summary>Click to view screenshot gallery from a real e-ink tablet</summary>
+
+### Dashboard Overview & Resolution Detection
+![Dashboard Overview](screenshots/01-dashboard-overview.png)
+*Main dashboard showing the resolution detection feature displaying 642×856 screen with 2.1875x pixel ratio*
+
+### Display & Rendering Tests
+![Display Tests](screenshots/02-display-tests.png)
+*Refresh rate test (41 FPS), contrast levels, and font rendering samples*
+
+### JavaScript Support Detection
+![JavaScript Support](screenshots/03-javascript-support.png)
+*Complete ES6 feature support including arrow functions, template literals, destructuring, spread operator, classes, and let/const*
+
+### CSS Features Testing
+![CSS Features](screenshots/04-css-features.png)
+*Flexbox and CSS Grid support with animation testing (with e-ink ghosting warning)*
+
+### Media Support Analysis
+![Media Support](screenshots/05-media-support.png)
+*Canvas and SVG rendering capabilities on e-ink display*
+
+### Input & Interaction Testing
+![Input & Interaction](screenshots/06-input-interaction.png)
+*Touch capability detection and form controls testing*
+
+### Touch Events Confirmed
+![Touch Detected](screenshots/07-touch-detected.png)
+*Touch event successfully detected and working on the Boox Note Air 2*
+
+### Storage & Web APIs
+![Storage & APIs](screenshots/08-storage-apis.png)
+*Full support for localStorage, sessionStorage, cookies, Fetch API, and Geolocation API*
+
+### Performance & Test Summary
+![Test Summary](screenshots/09-test-summary.png)
+*70% browser compatibility with detailed performance metrics and e-ink optimization recommendations*
+
+</details>
+
 ## Features
 
 ### 🖥️ Display & Rendering Tests
