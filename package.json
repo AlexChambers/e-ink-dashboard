@@ -1,0 +1,24 @@
+{
+  "name": "e-ink-dashboard",
+  "version": "1.0.0",
+  "description": "E-ink Browser Testing Dashboard - A comprehensive web-based testing suite for e-ink tablets",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "e-ink",
+    "browser",
+    "testing",
+    "dashboard",
+    "tablet",
+    "android"
+  ],
+  "author": "E-ink Dashboard",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

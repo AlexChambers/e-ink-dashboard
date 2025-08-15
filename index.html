@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-ink Browser Testing Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>E-ink Browser Testing Dashboard</h1>
+        <p>Test your e-ink tablet browser capabilities and limitations</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <button id="toggleContrast" class="btn">Toggle High Contrast</button>
+            <button id="runAllTests" class="btn primary">Run All Tests</button>
+            <button id="exportResults" class="btn">Export Results</button>
+        </div>
+
+        <div class="test-grid">
+            <!-- Display Tests -->
+            <section class="test-category">
+                <h2>Display & Rendering</h2>
+                <div class="test-item" id="resolutionTest">
+                    <h3>Display Resolution</h3>
+                    <div class="test-result">Testing...</div>
+                    <div class="resolution-info">
+                        <div class="resolution-details"></div>
+                    </div>
+                </div>
+                <div class="test-item" id="refreshTest">
+                    <h3>Refresh Rate Test</h3>
+                    <div class="test-result">Testing...</div>
+                    <div class="refresh-animation"></div>
+                </div>
+                <div class="test-item" id="contrastTest">
+                    <h3>Contrast Levels</h3>
+                    <div class="test-result">Testing...</div>
+                    <div class="contrast-samples">
+                        <div class="sample" style="background: #000; color: #fff;">100%</div>
+                        <div class="sample" style="background: #333; color: #ccc;">75%</div>
+                        <div class="sample" style="background: #666; color: #999;">50%</div>
+                        <div class="sample" style="background: #999; color: #666;">25%</div>
+                        <div class="sample" style="background: #ccc; color: #333;">10%</div>
+                    </div>
+                </div>
+                <div class="test-item" id="fontTest">
+                    <h3>Font Rendering</h3>
+                    <div class="test-result">Testing...</div>
+                    <div class="font-samples">
+                        <p style="font-size: 12px;">12px text sample</p>
+                        <p style="font-size: 16px;">16px text sample</p>
+                        <p style="font-size: 20px;">20px text sample</p>
+                        <p style="font-size: 24px;">24px text sample</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- JavaScript Support -->
+            <section class="test-category">
+                <h2>JavaScript Support</h2>
+                <div class="test-item" id="jsBasicTest">
+                    <h3>Basic JavaScript</h3>
+                    <div class="test-result">Testing...</div>
+                </div>
+                <div class="test-item" id="es6Test">
+                    <h3>ES6 Features</h3>
+                    <div class="test-result">Testing...</div>
+                </div>
+                <div class="test-item" id="asyncTest">
+                    <h3>Async/Await Support</h3>
+                    <div class="test-result">Testing...</div>
+                </div>
+                <div class="test-item" id="promiseTest">
+                    <h3>Promise Support</h3>
+                    <div class="test-result">Testing...</div>
+                </div>
+            </section>
+
+            <!-- CSS Features -->
+            <section class="test-category">
+                <h2>CSS Features</h2>
+                <div class="test-item" id="flexboxTest">
+                    <h3>Flexbox Support</h3>
+                    <div class="test-result">Testing...</div>
+                    <div class="flex-demo">
+                        <div>Item 1</div>
+                        <div>Item 2</div>
+                        <div>Item 3</div>
+                    </div>
+                </div>
+                <div class="test-item" id="gridTest">
+                    <h3>CSS Grid Support</h3>
+                    <div class="test-result">Testing...</div>
+                    <div class="grid-demo">
+                        <div>A</div>
+                        <div>B</div>
+                        <div>C</div>
+                        <div>D</div>
+                    </div>
+                </div>
+                <div class="test-item" id="animationTest">
+                    <h3>CSS Animations</h3>
+                    <div class="test-result">Testing...</div>
+                    <div class="animation-demo">Animated Box</div>
+                </div>
+            </section>
+
+            <!-- Media Support -->
+            <section class="test-category">
+                <h2>Media Support</h2>
+                <div class="test-item" id="imageTest">
+                    <h3>Image Support</h3>
+                    <div class="test-result">Testing...</div>
+                    <div class="media-samples">
+                        <canvas id="testCanvas" width="100" height="50"></canvas>
+                    </div>
+                </div>
+                <div class="test-item" id="svgTest">
+                    <h3>SVG Support</h3>
+                    <div class="test-result">Testing...</div>
+                    <svg width="100" height="50" viewBox="0 0 100 50">
+                        <circle cx="25" cy="25" r="20" fill="black" stroke="gray" stroke-width="2"/>
+                        <rect x="55" y="15" width="20" height="20" fill="gray"/>
+                    </svg>
+                </div>
+            </section>
+
+            <!-- Input & Interaction -->
+            <section class="test-category">
+                <h2>Input & Interaction</h2>
+                <div class="test-item" id="touchTest">
+                    <h3>Touch Support</h3>
+                    <div class="test-result">Testing...</div>
+                    <div id="touchArea" class="touch-area">Touch here to test</div>
+                </div>
+                <div class="test-item" id="formTest">
+                    <h3>Form Controls</h3>
+                    <div class="test-result">Testing...</div>
+                    <div class="form-demo">
+                        <input type="text" placeholder="Text input">
+                        <select><option>Select option</option></select>
+                        <input type="checkbox"> Checkbox
+                        <input type="range" min="0" max="100" value="50">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Storage & APIs -->
+            <section class="test-category">
+                <h2>Storage & APIs</h2>
+                <div class="test-item" id="storageTest">
+                    <h3>Storage Support</h3>
+                    <div class="test-result">Testing...</div>
+                </div>
+                <div class="test-item" id="fetchTest">
+                    <h3>Fetch API</h3>
+                    <div class="test-result">Testing...</div>
+                </div>
+                <div class="test-item" id="geolocationTest">
+                    <h3>Geolocation API</h3>
+                    <div class="test-result">Testing...</div>
+                </div>
+            </section>
+
+            <!-- Performance -->
+            <section class="test-category">
+                <h2>Performance Metrics</h2>
+                <div class="test-item" id="renderTest">
+                    <h3>Rendering Performance</h3>
+                    <div class="test-result">Testing...</div>
+                </div>
+                <div class="test-item" id="memoryTest">
+                    <h3>Memory Usage</h3>
+                    <div class="test-result">Testing...</div>
+                </div>
+            </section>
+        </div>
+
+        <section class="results-summary">
+            <h2>Test Results Summary</h2>
+            <div id="summaryContent">
+                <p>Run tests to see results summary...</p>
+            </div>
+            <div class="export-options">
+                <textarea id="exportData" placeholder="Test results will appear here..." readonly></textarea>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>E-ink Browser Testing Dashboard - Optimized for e-ink displays</p>
+        <p>Last updated: <span id="lastUpdated"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
